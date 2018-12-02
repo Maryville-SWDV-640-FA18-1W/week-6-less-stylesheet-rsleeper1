@@ -1,26 +1,24 @@
 @blue:#002244;
 @red:#C60C30;
 @silver:#B0B7BC;
+@black:#000;
 
-  
-html {
-    box-sizing: border-box;
-    -ms-overflow-style: scrollbar;
+.borderStyle{
+    outline-style: double;
+    outline-width: 10px;
+    outline-color:@red;
 }
-
 
 header {
     text-align: center;
     color:@silver;
-    outline-style: double;
-    outline-width: 10px;
-    outline-color:@red;
     background-color:@blue;
 
     h1 {
         font-size: 60px;
         font-weight: 500;
         font-family: 'Luminari', fantasy;
+        .borderStyle
     }
 }
 h2 {
@@ -29,11 +27,8 @@ h2 {
     font-family: 'Luminari', fantasy;  
     text-align: center;
     color:@silver;
-    outline-style: double;
-    outline-width: 10px;
-    outline-color:@red;
-    background-color:@blue; 
-    
+    background-color:@blue;
+    .borderStyle 
 }
 
 .container{
@@ -66,16 +61,15 @@ h2 {
         -ms-flex-positive: 1;
         flex-grow: 1;
         max-width: 100%;
+
+        a{
+            color:@silver;
+            &:hover{
+                color:@black;
+                font-weight: bold;
+            }
+        }
     }
-}
-
-a{
-    color:@silver;
-}
-
-a:hover{
-    color:black;
-    font-weight: bold;
 }
 
 img.align-content-center {
@@ -84,10 +78,3 @@ img.align-content-center {
     display: block;
     margin: 0px auto;
   }
-
-div.box {
-    height: 100px;
-    width: 100px;
-    display: inline-block;
-    margin: 0 10px 0 10px;
-}

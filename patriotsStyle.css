@@ -1,19 +1,20 @@
-html {
-  box-sizing: border-box;
-  -ms-overflow-style: scrollbar;
+.borderStyle {
+  outline-style: double;
+  outline-width: 10px;
+  outline-color: #C60C30;
 }
 header {
   text-align: center;
   color: #B0B7BC;
-  outline-style: double;
-  outline-width: 10px;
-  outline-color: #C60C30;
   background-color: #002244;
 }
 header h1 {
   font-size: 60px;
   font-weight: 500;
   font-family: 'Luminari', fantasy;
+  outline-style: double;
+  outline-width: 10px;
+  outline-color: #C60C30;
 }
 h2 {
   font-size: 36px;
@@ -21,10 +22,10 @@ h2 {
   font-family: 'Luminari', fantasy;
   text-align: center;
   color: #B0B7BC;
+  background-color: #002244;
   outline-style: double;
   outline-width: 10px;
   outline-color: #C60C30;
-  background-color: #002244;
 }
 .container {
   width: 100%;
@@ -58,11 +59,11 @@ h2 {
   flex-grow: 1;
   max-width: 100%;
 }
-a {
+.container .col a {
   color: #B0B7BC;
 }
-a:hover {
-  color: black;
+.container .col a:hover {
+  color: #000;
   font-weight: bold;
 }
 img.align-content-center {
@@ -70,10 +71,4 @@ img.align-content-center {
   height: 250px;
   display: block;
   margin: 0px auto;
-}
-div.box {
-  height: 100px;
-  width: 100px;
-  display: inline-block;
-  margin: 0 10px 0 10px;
 }
